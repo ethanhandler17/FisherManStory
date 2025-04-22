@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <title>Fisherman Story</title>
-  <link rel="stylesheet" href="Style.css" />
+  <!-- Update this link to point to the style.css inside FisherManStory folder -->
+  <link rel="stylesheet" href="FisherManStory/style.css" />
 </head>
 <body>
   <div id="story" class="story-container"></div>
 
-  <script src="ink.js"></script>
+  <script src="FisherManStory/ink.js"></script>
   <script>
-    fetch('FisherMan2.ink.json')
+    // Update this fetch to point to FisherMan2.ink.json inside FisherManStory folder
+    fetch('FisherManStory/FisherMan2.ink.json')
       .then(response => response.json())
       .then(storyContent => {
         const story = new inkjs.Story(storyContent);
